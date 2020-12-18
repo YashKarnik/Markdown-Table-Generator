@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="./public/favicon.svg" type="image/x-icon" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Markdown Table Generator</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="input-tables-container">
+				<h3>Enter Dimention (n&times;n)</h3>
+				<section class="table-dimentions">
+					<input
+						type="number"
+						id="dimention-row"
+						class="input-group"
+						placeholder="Rows"
+					/>
+					<span>&times;</span>
+					<input
+						type="number"
+						id="dimention-col"
+						class="input-group"
+						placeholder="Columns"
+					/>
+					<button type="button" class="input-group input-group-btn">✓</button>
+					<input
+						type="text"
+						id="default-value"
+						value=""
+						style="display: none"
+						class="input-group"
+						placeholder="Default Value"
+					/>
+
+					<button
+						type="button"
+						id="copy-btn"
+						style="display: none"
+						class="input-group input-group-btn"
+					>
+						Copy to clipboard
+					</button>
+				</section>
+
+				<section class="table"></section>
+			</div>
+			<div class="output-tables-container text-center"></div>
+		</div>
+	</body>
+	<script defer src="./js/helper.js"></script>
+	<script defer src="./js/index.js"></script>
+</html>

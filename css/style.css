@@ -1,0 +1,79 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	overflow-x: hidden;
+}
+.container {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	overflow: hidden;
+}
+
+.output-tables-container,
+.input-tables-container {
+	overflow: scroll;
+	height: 50vh;
+	background-color: #333;
+	color: white;
+}
+
+.input-tables-container {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+.output-tables-container {
+	padding: 0 2rem;
+	font-family: monospace, Arial, Helvetica, sans-serif;
+}
+
+.input-group {
+	height: 1.75rem;
+	border: none;
+	outline: skyblue;
+	padding: 0.5rem;
+
+	text-align: center;
+}
+.input-group-btn {
+	padding: 1rem;
+}
+.input-group-btn:hover {
+	background-color: rgb(194, 193, 193);
+	cursor: pointer;
+}
+
+.table-dimentions {
+	text-align: center;
+	margin-top: 1rem;
+	border-bottom: 1px solid black;
+}
+
+.table-dimentions > .input-group {
+	padding: 0 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.table {
+	display: flex;
+	flex-direction: column;
+}
+
+.table-row {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.table-column {
+	margin: 0.5rem;
+	position: relative;
+}
+.table-row:first-child {
+	border-bottom: 2px dotted black;
+}
+
+.text-center {
+	text-align: center;
+}
