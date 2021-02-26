@@ -1,3 +1,2 @@
-# Markdown Table generator
-
-## Hosted Website [here](https://yashkarnik.github.io/Markdown-Table-Generator/)
+# [Markdown Table generator](https://yashkarnik.github.io/Markdown-Table-Generator/)
+A simple GUI to help make markdown(.md) tables easier
